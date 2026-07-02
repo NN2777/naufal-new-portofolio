@@ -157,7 +157,7 @@ const works = [
     ],
     private: false,
     thumbnail: "EIDESIGN",
-    image: "/images/work/eidesign.png",
+    image: "/images/work/eidesign/eidesign-home.png",
   },
   {
     title: "PPID Polinema",

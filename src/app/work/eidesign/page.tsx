@@ -65,7 +65,7 @@ export default function EiDesignPage() {
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.025] transition duration-300 hover:border-cyan-400/30 hover:bg-cyan-400/[0.025]">
               <div className="relative aspect-[2/1] bg-[#10151c]">
                 <Image
-                  src="/images/work/eidesign.png"
+                  src="/images/work/eidesign/eidesign-home.png"
                   alt="EiDesign website preview"
                   fill
                   priority
