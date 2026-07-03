@@ -239,11 +239,12 @@ export default function WorkShowcase() {
             </h2>
 
             <p className="mt-5 text-sm leading-7 text-slate-400 md:text-base">
-              A selected list of systems, modules, CMS work, automation tools,
+              A selected list of systems, modules, work, tools,
               and websites I have worked on. Internal projects are presented
               through scope, stack, and case studies instead of public links.
             </p>
           </div>
+          
         </Reveal>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

@@ -123,7 +123,7 @@ export default function SkillsTools() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <Reveal>
-          <div className="max-w-2xl">
+          <div className="max-w-3xl">
             <p className="font-mono text-sm text-cyan-300">
               Capability-based stack
             </p>
@@ -133,8 +133,8 @@ export default function SkillsTools() {
             </h2>
 
             <p className="mt-5 text-sm leading-7 text-slate-400 md:text-base">
-              What I can build, and the tools I use to build it. I organize my
-              skills by capability, not just by technology names.
+              These are the tools I work with regularly. I use them in real
+              projects, while still expanding my stack to become sharper and build better products.
             </p>
           </div>
         </Reveal>
