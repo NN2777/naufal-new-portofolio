@@ -18,7 +18,7 @@ const summaryRows = [
     period: "2023",
     title: "Education",
     role: "D4 Information Engineering",
-    text: "Graduated from D4 Information Engineering at Politeknik Negeri Malang, building a foundation in programming, databases, web development, and system logic.",
+    text: "Graduated from the International Class Program in D4 Information Engineering at Politeknik Negeri Malang, with a foundation in programming, databases, web development, and system logic.",
   },
 ];
 
