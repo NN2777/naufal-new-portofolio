@@ -36,6 +36,11 @@ const workItems = [
   },
   {
     number: "07",
+    label: "Anak Autis",
+    href: "/work/anakautism",
+  },
+  {
+    number: "08",
     label: "Gamarista Studio",
     href: "/work/gamarista",
   },

@@ -160,6 +160,37 @@ const works = [
     image: "/images/work/eidesign/eidesign-home.png",
   },
   {
+    title: "Anak Autis Website",
+    company: "Personal Project",
+    date: "2026",
+    type: "Next.js Website UI",
+    description:
+      "Responsive website UI for an autism support/service concept. Currently focused on the public-facing interface, with planned expansion into a blog/CMS-style website.",
+    stack: [
+      { name: "Next.js", Icon: SiNextdotjs },
+      { name: "React", Icon: SiReact },
+      { name: "Tailwind CSS", Icon: SiTailwindcss },
+      { name: "Vercel", Icon: SiVercel },
+    ],
+    links: [
+      {
+        label: "Learn More",
+        href: "/work/anakautism",
+        type: "internal",
+        variant: "button",
+      },
+      {
+        label: "Explore Site",
+        href: "https://anakautis.vercel.app/",
+        type: "external",
+        variant: "text",
+      },
+    ],
+    private: false,
+    thumbnail: "ANAK AUTIS",
+    image: "/images/work/anakautism/anakautis2.png",
+  },
+  {
     title: "PPID Polinema",
     company: "Polinema",
     date: "2024",
@@ -239,12 +270,11 @@ export default function WorkShowcase() {
             </h2>
 
             <p className="mt-5 text-sm leading-7 text-slate-400 md:text-base">
-              A selected list of systems, modules, work, tools,
-              and websites I have worked on. Internal projects are presented
-              through scope, stack, and case studies instead of public links.
+              A selected list of systems, modules, work, tools, and websites I
+              have worked on. Internal projects are presented through scope,
+              stack, and case studies instead of public links.
             </p>
           </div>
-          
         </Reveal>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -254,7 +284,7 @@ export default function WorkShowcase() {
               delay={index * 80}
               className={work.featured ? "md:col-span-2 xl:col-span-2" : ""}
             >
-             <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.025] transition hover:border-cyan-400/30 hover:bg-cyan-400/[0.035]">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.025] transition hover:border-cyan-400/30 hover:bg-cyan-400/[0.035]">
                 {/* Thumbnail */}
                 <div
                   className={`relative overflow-hidden border-b border-white/10 bg-black/20 ${
