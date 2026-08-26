@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href="resume-naufal-nafidiin.pdf"
+              href="Naufal_Fullstack_Dev_CV_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-5 py-3 text-sm font-medium text-cyan-300 transition hover:bg-cyan-400/20"
