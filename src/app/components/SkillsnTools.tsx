@@ -12,13 +12,26 @@ import {
   SiChartdotjs,
   SiGoogleanalytics,
   SiMetabase,
+  SiPandas,
+  SiGooglebigquery,
+  SiGooglecolab,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiComposer,
+  SiNpm,
+  SiHostinger,
+  SiCss,
 } from "react-icons/si";
 import { MdArticle, MdImage, MdViewCarousel } from "react-icons/md";
-import { TbApi, TbClockCog, TbFileImport } from "react-icons/tb";
+import { TbApi, TbClockCog, TbFileImport, TbTerminal2 } from "react-icons/tb";
 import { FaFileCsv, FaServer } from "react-icons/fa6";
 import { RiFileExcel2Line } from "react-icons/ri";
 import { LuLayoutDashboard, LuTerminal, LuShieldCheck } from "react-icons/lu";
+import { LuCodeXml, LuPanelTop } from "react-icons/lu";
 import type { IconType } from "react-icons";
+import { VscJson } from "react-icons/vsc";
+import { LuSend } from "react-icons/lu";
 
 import Reveal from "@/app/components/Reveal";
 
@@ -41,12 +54,12 @@ const skillGroups: SkillGroup[] = [
     description:
       "I build database-driven admin systems, dashboard widgets, role-based access, CRUD modules, export/import workflows, and operational workflows for internal business use.",
     tools: [
-      { name: "Laravel Filament", Icon: SiLaravel },
+      { name: "Laravel", Icon: SiLaravel },
+      { name: "Laravel Filament", Icon: LuLayoutDashboard },
       { name: "Filament Shield", Icon: LuShieldCheck },
       { name: "PHP", Icon: SiPhp },
       { name: "MySQL", Icon: SiMysql },
       { name: "Chart.js", Icon: SiChartdotjs },
-      { name: "CSV", Icon: FaFileCsv },
     ],
   },
   {
@@ -55,11 +68,11 @@ const skillGroups: SkillGroup[] = [
     description:
       "I build admin-managed website content systems for articles, banners, product sections, custom pages, testimonials, and media assets.",
     tools: [
-      { name: "Laravel Filament", Icon: SiLaravel },
-      { name: "Laravel Blade", Icon: SiLaravel },
-      { name: "MySQL", Icon: SiMysql },
-      { name: "Articles", Icon: MdArticle },
+      { name: "Laravel", Icon: SiLaravel },
+      { name: "Laravel Filament", Icon: LuPanelTop },
+      { name: "Laravel Blade", Icon: LuCodeXml },
       { name: "PHP", Icon: SiPhp },
+      { name: "MySQL", Icon: SiMysql },
     ],
   },
   {
@@ -68,12 +81,14 @@ const skillGroups: SkillGroup[] = [
     description:
       "I work with operational data retreival, data cleaning, standardization, processing, and automation to reduce repetitive manual work.",
     tools: [
-      { name: "Google Analytics", Icon: SiGoogleanalytics },
-      { name: "Metabase", Icon: SiMetabase },
       { name: "Python", Icon: SiPython },
+      { name: "Pandas", Icon: SiPandas },
+      { name: "Google Colab", Icon: SiGooglecolab },
+      { name: "BigQuery", Icon: SiGooglebigquery },
       { name: "Excel", Icon: RiFileExcel2Line },
-      { name: "CSV", Icon: FaFileCsv },
+      { name: "CSV Processing", Icon: FaFileCsv },
       { name: "MySQL", Icon: SiMysql },
+      { name: "Metabase", Icon: SiMetabase },
     ],
   },
   {
@@ -93,24 +108,30 @@ const skillGroups: SkillGroup[] = [
     number: "05",
     title: "Deployment & Development",
     description:
-      "I understand basic full-stack deployment flow, version control, environment setup, and project maintenance.",
+      "I manage version control, environment configuration, dependency management, production deployment, and ongoing application maintenance.",
     tools: [
       { name: "Git", Icon: SiGit },
       { name: "GitHub", Icon: SiGithub },
-      { name: "CLI", Icon: LuTerminal },
+      { name: "Command Line", Icon: TbTerminal2 },
+      { name: "Composer", Icon: SiComposer },
+      { name: "npm", Icon: SiNpm },
+      { name: "Hostinger", Icon: SiHostinger },
     ],
   },
   {
     number: "06",
     title: "Frontend Implementation",
     description:
-      "I implement responsive layouts, landing pages, company profiles, and clean web interfaces.",
+      "I build responsive web interfaces, reusable components, landing pages, company profiles, and application frontends optimized for desktop and mobile devices.",
     tools: [
       { name: "Next.js", Icon: SiNextdotjs },
       { name: "React", Icon: SiReact },
-      { name: "Laravel Blade", Icon: SiLaravel },
+      { name: "TypeScript", Icon: SiTypescript },
+      { name: "JavaScript", Icon: SiJavascript },
       { name: "Tailwind CSS", Icon: SiTailwindcss },
-      { name: "HTML / CSS / JS / TS", Icon: LuLayoutDashboard },
+      { name: "Laravel Blade", Icon: LuCodeXml },
+      { name: "HTML5", Icon: SiHtml5 },
+      { name: "CSS3", Icon: SiCss },
     ],
   },
 ];
@@ -134,7 +155,8 @@ export default function SkillsTools() {
 
             <p className="mt-5 text-sm leading-7 text-slate-400 md:text-base">
               These are the tools I work with regularly. I use them in real
-              projects, while still expanding my stack to become sharper and build better products.
+              projects, while still expanding my stack to become sharper and
+              build better products.
             </p>
           </div>
         </Reveal>
