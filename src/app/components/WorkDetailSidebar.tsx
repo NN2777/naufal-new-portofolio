@@ -4,30 +4,30 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const workItems = [
-  {
+    {
     number: "01",
+    label: "E-Wallet",
+    href: "/work/e-wallet",
+  },
+  {
+    number: "02",
     label: "Digitala",
     href: "/work/digitala",
   },
   {
-    number: "02",
+    number: "03",
     label: "Cukakamu CMS",
     href: "/work/cukakamu",
   },
   {
-    number: "03",
+    number: "04",
     label: "Address & Excel Automation",
     href: "/work/ekstraksi-alamat",
   },
   {
-    number: "04",
+    number: "05",
     label: "Polinema Website",
     href: "/work/polinema",
-  },
-  {
-    number: "05",
-    label: "PPID Polinema",
-    href: "/work/ppid",
   },
   {
     number: "06",

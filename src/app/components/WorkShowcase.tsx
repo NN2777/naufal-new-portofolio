@@ -13,6 +13,8 @@ import {
   SiBootstrap,
   SiJavascript,
   SiWordpress,
+  SiGo,
+  SiPostgresql,
 } from "react-icons/si";
 
 import { LuExternalLink } from "react-icons/lu";
@@ -23,9 +25,65 @@ import { TbApi } from "react-icons/tb";
 
 const works = [
   {
+    title: "Fintech E-Wallet",
+    company: "Personal Engineering Showcase",
+    date: "2026",
+    type: "High-Concurrency Backend System",
+    description:
+      "A production-grade e-wallet engineered for safe, concurrent fund transfers. Features ACID-compliant ledgers, PostgreSQL pessimistic locking, idempotent APIs, and Midtrans payment gateway integration.",
+    stack: [
+      { name: "Go", Icon: SiGo },
+      { name: "PostgreSQL", Icon: SiPostgresql },
+      { name: "Next.js", Icon: SiNextdotjs },
+      { name: "Midtrans", Icon: TbApi }, 
+    ],
+    links: [
+      {
+        label: "Learn More",
+        href: "/work/e-wallet",
+        type: "internal",
+        variant: "button",
+      },
+    ],
+    featured: true,
+    thumbnail: "E-WALLET",
+    image: "/images/work/EWallet.png", // Update with your actual image path
+  },
+    {
+    title: "EiDesign",
+    company: "Client Work",
+    date: "2025",
+    type: "Public Website",
+    description:
+      "Responsive static website for portfolio, product showcase, and company profile use cases using modern frontend tools.",
+    stack: [
+      { name: "Next.js", Icon: SiNextdotjs },
+      { name: "React", Icon: SiReact },
+      { name: "Tailwind CSS", Icon: SiTailwindcss },
+      { name: "Vercel", Icon: SiVercel },
+    ],
+    links: [
+      {
+        label: "Learn More",
+        href: "/work/eidesign",
+        type: "internal",
+        variant: "button",
+      },
+      {
+        label: "Explore Site",
+        href: "https://ie-design.vercel.app",
+        type: "external",
+        variant: "text",
+      },
+    ],
+    private: false,
+    thumbnail: "EIDESIGN",
+    image: "/images/work/eidesign/eidesign-home.png",
+  },
+  {
     title: "Digitala",
     company: "Digiherba",
-    date: "Late 2024 — Present",
+    date: "2025 - 2026",
     type: "Internal Business System",
     description:
       "Internal system built with Laravel Filament for dashboards, database-driven modules, export/import workflows, API integrations, data syncing, attendance, and operational tools.",
@@ -127,37 +185,6 @@ const works = [
     private: false,
     thumbnail: "POLINEMA",
     image: "/images/work/polinema/Polinema-home.png",
-  },
-  {
-    title: "EiDesign",
-    company: "Client Work",
-    date: "2025",
-    type: "Public Website",
-    description:
-      "Responsive static website for portfolio, product showcase, and company profile use cases using modern frontend tools.",
-    stack: [
-      { name: "Next.js", Icon: SiNextdotjs },
-      { name: "React", Icon: SiReact },
-      { name: "Tailwind CSS", Icon: SiTailwindcss },
-      { name: "Vercel", Icon: SiVercel },
-    ],
-    links: [
-      {
-        label: "Learn More",
-        href: "/work/eidesign",
-        type: "internal",
-        variant: "button",
-      },
-      {
-        label: "Explore Site",
-        href: "https://ie-design.vercel.app",
-        type: "external",
-        variant: "text",
-      },
-    ],
-    private: false,
-    thumbnail: "EIDESIGN",
-    image: "/images/work/eidesign/eidesign-home.png",
   },
   {
     title: "Anak Autis Website",
