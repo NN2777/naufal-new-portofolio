@@ -47,7 +47,7 @@ const works = [
     ],
     featured: true,
     thumbnail: "E-WALLET",
-    image: "/images/work/EWallet.png", // Update with your actual image path
+    image: "/images/work/Ewallet.png", // Update with your actual image path
   },
     {
     title: "EiDesign",

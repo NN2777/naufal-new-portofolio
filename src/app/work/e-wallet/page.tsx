@@ -99,7 +99,7 @@ export default function EWalletPage() {
           <div className="mt-12 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-2">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-black/50">
               <Image
-                src="/images/work/EWallet.png"
+                src="/images/work/Ewallet.png"
                 alt="Fintech E-Wallet System Architecture"
                 fill
                 className="object-cover"
