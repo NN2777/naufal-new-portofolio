@@ -6,11 +6,11 @@ import Contact from "@/app/components/Contact";
 import { LuExternalLink } from "react-icons/lu";
 
 const coreStack = [
-  "Go (Golang)",
-  "PostgreSQL",
+  "Laravel",
   "Next.js",
   "TypeScript",
-  "Laravel",
+  "Go (Golang)",
+  "PostgreSQL",
   "Docker",
 ];
 
@@ -31,13 +31,14 @@ export default function Home() {
           </h1>
 
           <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-500 md:text-6xl">
-            Full-Stack Engineer
+            Software Engineer
           </h2>
 
           <div className="mt-7 max-w-3xl space-y-4">
             <p className="text-base leading-8 text-slate-400 md:text-2xl md:leading-10">
-              Full-Stack Engineer with strong fundamentals in backend development, focusing on high-performance backends for Fintech,
-              Banking, ERP, and Internal systems.
+              Software Engineer with strong software design fundamentals,
+              experienced in turning complex business operations into scalable,
+              end-to-end web applications and backend systems.
             </p>
           </div>
 

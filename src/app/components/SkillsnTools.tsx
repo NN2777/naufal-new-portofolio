@@ -19,6 +19,10 @@ import {
   SiCss,
   SiGo,
   SiPostgresql,
+  SiApachekafka,
+  SiRedis,
+  SiPrometheus,
+  SiGrafana,
 } from "react-icons/si";
 import { TbApi, TbClockCog, TbTerminal2 } from "react-icons/tb";
 import { FaFileCsv } from "react-icons/fa6";
@@ -43,36 +47,40 @@ type SkillGroup = {
 const skillGroups: SkillGroup[] = [
   {
     number: "01",
-    title: "High-Concurrency & Fintech Backend",
+    title: "Production Core — Internal Systems & ERPs",
     description:
-      "Designing ACID-compliant transaction ledgers, pessimistic locking mechanisms, idempotent API endpoints, and payment gateway integrations.",
+     "3 years of primary production experience building full-scale business platforms, internal ERPs (Digitala), and administrative portals using Laravel, PHP, and relational databases. Specialized in complex operational workflows, role-based access control (RBAC), and interactive reporting dashboards.",
+    tools: [
+      { name: "Laravel", Icon: SiLaravel },
+      { name: "PHP", Icon: SiPhp },
+      { name: "MySQL", Icon: SiMysql },
+      { name: "Laravel Filament", Icon: LuLayoutDashboard },
+      { name: "Filament Shield", Icon: LuShieldCheck },
+      { name: "Metabase", Icon: SiMetabase },
+      { name: "Chart.js", Icon: SiChartdotjs },
+    ],
+  },
+  {
+    number: "02",
+    title: "Extended Stack — Fintech Backend Services",
+    description:
+      "Not limited to PHP/Laravel i also have hands-on engineering of low-latency backend systems in Go. Demonstrated via a production-grade E-Wallet showcase featuring ACID double-entry ledgers, Kafka transactional outbox messaging, Redis caching & rate limiting, and Prometheus/Grafana observability.",
     tools: [
       { name: "Go", Icon: SiGo },
       { name: "PostgreSQL", Icon: SiPostgresql },
+      { name: "Kafka", Icon: SiApachekafka },
+      { name: "Redis", Icon: SiRedis },
+      { name: "Prometheus", Icon: SiPrometheus },
+      { name: "Grafana", Icon: SiGrafana },
       { name: "REST APIs", Icon: TbApi },
       { name: "Postman", Icon: SiPostman },
     ],
   },
   {
-    number: "02",
-    title: "Internal Systems & ERP Platforms",
-    description:
-      "Building database-driven business operations platforms, role-based access control, export/import workflows, and reporting dashboards.",
-    tools: [
-      { name: "Laravel", Icon: SiLaravel },
-      { name: "Laravel Filament", Icon: LuLayoutDashboard },
-      { name: "Filament Shield", Icon: LuShieldCheck },
-      { name: "PHP", Icon: SiPhp },
-      { name: "MySQL", Icon: SiMysql },
-      { name: "Chart.js", Icon: SiChartdotjs },
-      { name: "Metabase", Icon: SiMetabase },
-    ],
-  },
-  {
     number: "03",
-    title: "Frontend & Web Development",
+    title: "Frontend & Interfaces",
     description:
-      "Building responsive user interfaces, dynamic admin dashboards, and modern web applications optimized for desktop and mobile.",
+      "Comfortable translating UI/UX designs and layout systems from Figma into responsive client portals, internal dashboards, and dynamic web applications built with Next.js, React, and Tailwind CSS.",
     tools: [
       { name: "Next.js", Icon: SiNextdotjs },
       { name: "React", Icon: SiReact },
@@ -86,9 +94,9 @@ const skillGroups: SkillGroup[] = [
   },
   {
     number: "04",
-    title: "Data Automation & Infrastructure",
+    title: "Data Processing & Automation",
     description:
-      "Automating ETL pipelines, operational data extraction/cleaning, scheduled cron jobs, and application lifecycle management.",
+      "Experienced in automated data extraction, ETL workflows, and scheduled operational cron jobs to reduce manual overhead",
     tools: [
       { name: "Python", Icon: SiPython },
       { name: "Pandas", Icon: SiPandas },
@@ -107,7 +115,7 @@ export default function SkillsTools() {
   return (
     <section
       id="skills"
-      className="scroll-mt-10 lg:scroll-mt-0 border-t border-white/10 px-5 py-20 md:px-10 lg:px-16"
+      className="scroll-mt-10 border-t border-white/10 px-5 py-20 md:px-10 lg:px-16 lg:scroll-mt-0"
     >
       <div className="mx-auto w-full max-w-5xl">
         <Reveal>
@@ -121,45 +129,41 @@ export default function SkillsTools() {
             </h2>
 
             <p className="mt-5 text-sm leading-7 text-slate-400 md:text-base">
-              These are the tools and technologies I build with daily across production applications and engineering showcases.
+              These are the tools and technologies I build with daily across
+              production applications and engineering showcases.
             </p>
           </div>
         </Reveal>
 
-        <div className="mt-10 grid gap-4">
+        <div className="mt-10 grid gap-6">
           {skillGroups.map((group, index) => (
             <Reveal key={group.number} delay={index * 80}>
-              <article
-                className="rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition hover:border-cyan-400/30 hover:bg-cyan-400/[0.035]"
-              >
-                <div className="grid gap-6 lg:grid-cols-[1fr_1.1fr] lg:items-center">
-                  {/* Left */}
-                  <div className="flex gap-4">
-                    <span className="mt-1 font-mono text-sm text-cyan-300">
-                      {group.number}
-                    </span>
+              <article className="group rounded-2xl border border-white/10 bg-white/[0.025] p-6 transition-all hover:border-cyan-400/30 hover:bg-cyan-400/[0.035] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  {/* Number Badge */}
+                  <span className="mt-1 font-mono text-sm font-semibold text-cyan-300 shrink-0">
+                    {group.number}
+                  </span>
 
-                    <div>
-                      <h3 className="text-xl font-semibold tracking-tight text-white">
-                        {group.title}
-                      </h3>
+                  {/* Body Content */}
+                  <div className="w-full">
+                    <h3 className="text-xl font-semibold tracking-tight text-white transition-colors group-hover:text-cyan-200">
+                      {group.title}
+                    </h3>
 
-                      <p className="mt-2 max-w-xl text-sm leading-6 text-slate-400">
-                        {group.description}
-                      </p>
-                    </div>
-                  </div>
+                    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400 md:text-base">
+                      {group.description}
+                    </p>
 
-                  {/* Tools */}
-                  <div className="lg:justify-self-end">
-                    <div className="flex flex-wrap gap-2 lg:justify-end">
+                    {/* Tools & Badges - Natural Left-to-Right Flow */}
+                    <div className="mt-6 flex flex-wrap gap-2">
                       {group.tools.map((tool) => {
                         const Icon = tool.Icon;
 
                         return (
                           <span
                             key={tool.name}
-                            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs text-slate-300"
+                            className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-black/30 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-cyan-400/40 hover:text-white"
                           >
                             <Icon className="h-3.5 w-3.5 text-cyan-300" />
                             {tool.name}

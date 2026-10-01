@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const summaryRows = [
   {
-    period: "Jul 2025 — Present",
-    title: "Personal Engineering",
-    role: "Full-Stack Engineer",
-    text: "Focusing on fintech or banking architecture and high-concurrency systems. Engineered an ACID-compliant E-Wallet showcase featuring Go, PostgreSQL pessimistic locking, Midtrans payment gateway, and Next.js. Planning to expand into a more banking tech like Java, Spring Boot, Kafka, and Redis for high-concurrency transaction systems.",
+    period: "Jul 2026 — Present",
+    title: "Independent Practice",
+    role: "Backend Engineer",
+    text: "Engineered a high-concurrency E-Wallet backend in Go (Golang) focusing on ACID compliance, pessimistic locking, double-entry ledger accounting, and idempotent transaction safety. Integrated Midtrans payment gateway for external transaction processing, backed by Redis for multi-tier caching and rate limiting. Currently expanding the system with Kafka for outbox pattern event-driven messaging alongside Prometheus and Grafana for system observability and monitoring."
   },
   {
     period: "Febuary 2025 — July 2026",
     title: "Digiherba Nusantara",
-    role: "Data Analyst → Developer / IT",
-    text: "Joined Digiherba Nusantara as a Data Analyst, working with daily data cleaning, formatting, and standardization. Over time, the role expanded into developer and IT work, including Python automation, Digitala internal system development, Laravel Filament modules, export/import workflows, API integrations, database syncing, attendance system, and scheduled automation.",
+    role: "Junior Web Programmer",
+    text: "Joined Digiherba Nusantara as a Junior Web Programmer, working with daily data cleaning, formatting, and standardization. Over time, the role expanded into developer and IT work, including Python automation, Digitala internal system development, Laravel Filament modules, export/import workflows, API integrations, database syncing, attendance system, and scheduled automation.",
   },
   {
     period: "2024",
@@ -39,63 +39,23 @@ export default function ProfessionalSummary() {
         <Reveal>
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
             {/* Text */}
-            <div className="max-w-3xl">
+            <div className="max-w-3xl space-y-4">
               <p className="font-mono text-sm text-cyan-300">Summary</p>
 
-              <h2 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">
+              <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
                 Professional Summary
               </h2>
 
-              <p className="mt-6 max-w-4xl text-base leading-8 text-slate-300 md:text-lg md:leading-9">
-                I&apos;m a{" "}
-                <span className="font-medium text-cyan-300">
-                  Full-Stack Engineer
-                </span>{" "}
-                specializing in internal business platforms and fintech backend
-                systems.
+              <p className="text-base leading-8 text-slate-300 md:text-lg md:leading-8">
+                Versatile and adaptive Software Engineer with 3 years of
+                experience translating complex business workflows into reliable
+                software, grounded in clean design patterns, programming
+                paradigms, and system architecture.
               </p>
 
-              {/* Clean Scannable Highlights */}
-              <ul className="mt-6 space-y-4 text-base leading-7 text-slate-300 md:text-lg md:leading-8">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 shrink-0 text-cyan-300 text-xs">
-                    ▸
-                  </span>
-                  <span>
-                    <strong className="font-medium text-white">Past:</strong>{" "}
-                    Built{" "}
-                    <span className="font-medium text-cyan-300">Digitala</span>{" "}
-                    (an ERP system) and custom Python data tools at{" "}
-                    <a
-                      href="https://www.instagram.com/digiherbanusantara/?hl=en"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-cyan-300 underline decoration-cyan-300/30 underline-offset-4 transition hover:text-cyan-200 hover:decoration-cyan-200"
-                    >
-                      PT Digi Herba Nusantara
-                    </a>
-                    .
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1.5 shrink-0 text-cyan-300 text-xs">
-                    ▸
-                  </span>
-                  <span>
-                    <strong className="font-medium text-white">
-                      Current Interest:
-                    </strong>{" "}
-                    Banking & Fintech, i just built a production-grade{" "}
-                    <span className="font-medium text-cyan-300">
-                      E-Wallet Showcase
-                    </span>{" "}
-                    (Go, PostgreSQL, Next.js) featuring{" "}
-                    <span className="font-medium text-cyan-300">Midtrans</span>{" "}
-                    gateway integration, ACID ledgers, idempotency, and
-                    concurrent transaction safety.
-                  </span>
-                </li>
-              </ul>
+              <p className="text-base leading-8 text-slate-300 md:text-lg md:leading-8">
+                Expanding on my experience delivering web applications with Laravel, I am currently growing and adapting my core backend skills to master Go driven by an interest in building resilient, high-concurrency architectures tailored for fintech industry standards.
+              </p>
             </div>
 
             {/* Photo */}
